@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "43e4716d-ea3a-4416-9e0d-44862f723bc3",
+		"name": "Aslan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Employee_1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"David\",\r\n    \"lastName\": \"Kilan\",\r\n    \"email\": \"david@kilan.com\",\r\n    \"payrollId\": \"007\",\r\n    \"annualSalary\": 10000,\r\n    \"salaryAllowancePercentage\": 20\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Employee_2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"David\",\r\n    \"lastName\": \"Owski\",\r\n    \"email\": \"david@nowski.com\",\r\n    \"payrollId\": \"008\",\r\n    \"annualSalary\": 9000,\r\n    \"salaryAllowancePercentage\": 20\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Employee 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/employee/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Employee 1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"David\",\r\n    \"lastName\": \"Kilan\",\r\n    \"email\": \"david@kilan.com\",\r\n    \"payrollId\": \"007\",\r\n    \"annualSalary\": 12000.00,\r\n    \"salaryAllowancePercentage\": 20.00\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/employee/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
